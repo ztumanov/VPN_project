@@ -125,6 +125,8 @@ html, body {margin:0;padding:0;}
     margin:0 auto; /* Центрируем блоки */
     width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
     max-width:1400px; /* Устанавливаем максимальную ширину */
+    height: 100%;
+    margin-bottom: 300px;
     
 }
 .inline div {
@@ -136,46 +138,44 @@ html, body {margin:0;padding:0;}
     border-radius: 25px;
     
 }
-.left-block{
 
-}
 
 .left-block {
-    margin-top: 50px;
+    margin-top: 15px;
     width:23%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
-    height:400px; /* Высота блока */
+    height:380px; /* Высота блока */
     color:#000000;
     border-width:1;
     border-color: rgb(190,190,190);
     border-style: solid;
 }
 .content {
-    margin-top: 50px;
+    margin-top: 15px;
     color:#000000;
     border-width:1;
     border-color: rgb(190,190,190);
     border-style: solid;
     width:23%;
-    height:400px;
+    height:380px;
 }
 .right-block {
-    margin-top: 50px;
+    margin-top: 15px;
     
     width:23%;
-    height:400px;
+    height:380px;
     color:#000000;
     border-width:1;
     border-color: rgb(190,190,190);
     border-style: solid;
 }
 .right-block2 {
-  margin-top: 50px;
-  color:#000000;
+    margin-top: 15px;
+    color:#000000;
     border-width:1;
     border-color: rgb(190,190,190);
     border-style: solid;
-  width:23%;
-  height:400px;
+    width:23%;
+    height:380px;
 }
 .text-by{
   width: 90%;
@@ -195,8 +195,12 @@ html, body {margin:0;padding:0;}
   padding-left: 70px;
 }
 .titleH{
-  
+  height: 600px;
+  width: 100%;
+  margin-top: 150px;
   color: #2b2d2e;
+
+  
 }
 .titleH ul{
   margin-left: auto;
@@ -213,24 +217,34 @@ html, body {margin:0;padding:0;}
 /* 
 Меню
 */
-.login {
-    float: left;
-    margin-left: 80%;
-}
+
 
 .menu{
+  position:fixed;
+  padding-top: 25px;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+ 
+}
+
+.login {
+  float: right;
+  margin-right: 80px;
+}
+.munu-all{
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
-  width: 630px;
-  height: 50px;
- 
 }
 .menu ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем отступы*/
   padding-left: 0; /*убираем отступы*/
-  margin-top:25px; /*делаем отступ сверху*/
+ 
   margin-left: 55px;
+ 
   
 }
 .menu a {
@@ -255,18 +269,29 @@ html, body {margin:0;padding:0;}
   
 }
 .leftTitle{
-  width: 100%;
+ width: 90%;
+  margin-left: auto;
+  margin-top: auto;
+ 
 }
 
 .leftTitle ul{
   width: 45%;
+  height: 45%;
   list-style: none;
   float: left;
+ 
 
 }
+.text-title{
+  padding-left: 35px;
+  padding-bottom: 10px;
+  width: 80%;
+  
+}
 .leftTitle img{
-  width: 68px;
-  height: 68px;
+  width: 80px;
+  height: 80px;
   float: left;
   margin: -10px 15px 15px 15px ;
 }
@@ -274,7 +299,20 @@ html, body {margin:0;padding:0;}
   margin-left: 80px;
 
 }
+.leftTitle h2{
+  padding-bottom: 20px;
+  font-size: 38pt;
+}
 .tarif_tittle {
   color: #000;
   text-align:center; 
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-size: 38pt;
+}
+
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: #2b2d2e;
 }
