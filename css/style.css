@@ -16,7 +16,9 @@ body {
 }
 
 #wrapper, label, #arrow, button span { transition: all .5s cubic-bezier(.6,0,.4,1); }
-
+label {
+  color: #000;
+}
 #wrapper { overflow: hidden; }
 
 #signin:checked ~ #wrapper { height: 178px; }
@@ -121,14 +123,8 @@ button:hover {
 
 
 html, body {margin:0;padding:0;}
-.main {
-    margin:0 auto; /* Центрируем блоки */
-    width:100%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
-    max-width:1400px; /* Устанавливаем максимальную ширину */
-    height: 100%;
-    margin-bottom: 300px;
-    
-}
+
+
 .inline div {
     display:inline-block; /* Делаем блоки по горизонтали */
     display: -moz-inline-stack; /* Для FireFox 2, тот же самый, что и inline-block */
@@ -140,43 +136,7 @@ html, body {margin:0;padding:0;}
 }
 
 
-.left-block {
-    margin-top: 15px;
-    width:23%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
-    height:380px; /* Высота блока */
-    color:#000000;
-    border-width:1;
-    border-color: rgb(190,190,190);
-    border-style: solid;
-}
-.content {
-    margin-top: 15px;
-    color:#000000;
-    border-width:1;
-    border-color: rgb(190,190,190);
-    border-style: solid;
-    width:23%;
-    height:380px;
-}
-.right-block {
-    margin-top: 15px;
-    
-    width:23%;
-    height:380px;
-    color:#000000;
-    border-width:1;
-    border-color: rgb(190,190,190);
-    border-style: solid;
-}
-.right-block2 {
-    margin-top: 15px;
-    color:#000000;
-    border-width:1;
-    border-color: rgb(190,190,190);
-    border-style: solid;
-    width:23%;
-    height:380px;
-}
+
 .text-by{
   width: 90%;
   text-align: center;
@@ -268,41 +228,16 @@ html, body {margin:0;padding:0;}
   margin-right:55px; /*Добавляем отступ у пунктов меню*/
   
 }
-.leftTitle{
- width: 90%;
-  margin-left: auto;
-  margin-top: auto;
- 
-}
 
-.leftTitle ul{
-  width: 45%;
-  height: 45%;
-  list-style: none;
-  float: left;
- 
 
-}
+
 .text-title{
   padding-left: 35px;
   padding-bottom: 10px;
   width: 80%;
   
 }
-.leftTitle img{
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin: -10px 15px 15px 15px ;
-}
-.leftTitle h3{
-  margin-left: 80px;
 
-}
-.leftTitle h2{
-  padding-bottom: 20px;
-  font-size: 38pt;
-}
 .tarif_tittle {
   color: #000;
   text-align:center; 
@@ -315,4 +250,163 @@ footer{
   width: 100%;
   height: 300px;
   background-color: #2b2d2e;
+}
+
+/*---------------------------------------------------------------------------------------------------Левый блок информации--------------------------------------------------------------- */
+.leftTitle{
+  width: 90%;
+  margin-left: auto;
+  margin-top: auto;
+
+ }
+
+ .leftTitle ul{
+  width: 45%;
+  height: 45%;
+  list-style: none;
+  float: left;
+ 
+}
+
+.leftTitle img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: -10px 15px 15px 15px ;
+}
+
+.leftTitle h3 {
+  margin-left: 80px;
+}
+
+.leftTitle h2{
+  padding-bottom: 20px;
+  font-size: 38pt;
+}
+
+/*---------------------------------------------------------------------------------------------------Левый блок информации--------------------------------------------------------------- */
+
+/*---------------------------------------------------------------------------------------------------Правый блок информации--------------------------------------------------------------- */
+
+.rightTitle{
+  width: 90%;
+  margin-left: auto;
+  margin-top: auto;
+
+ }
+
+ .rightTitle ul{
+  width: 45%;
+  height: 45%;
+  list-style: none;
+  float: left;
+ 
+}
+
+.righttTitle img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: -10px 15px 15px 15px ;
+}
+
+.rightTitle h3 {
+  margin-left: 80px;
+}
+
+.rightTitle h2{
+  padding-bottom: 20px;
+  font-size: 38pt;
+}
+
+
+/*---------------------------------------------------------------------------------------------------Блок информация--------------------------------------------------------------- */
+
+.inform{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  margin-top: 200px;
+  width: 90%;
+ 
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  
+  
+  height: 400px;
+  color: #000;
+
+  
+}
+.grid img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin: -10px 15px 15px 15px ;
+}
+.grid ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  float: left;
+}
+
+.grid h3 {
+  margin-left: 80px;
+}
+
+.grid h2{
+  padding-bottom: 20px;
+  font-size: 38pt;
+}
+
+/*---------------------------------------------------------------------------------------------------Блок информация--------------------------------------------------------------- */
+
+/*-----------------------------------------------------------------------------------------------------Блок Тарифов---------------------------------------------------------------- */
+
+.tarif {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+  margin:0 auto; /* Центрируем блоки */
+  width:90%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
+  max-width:1400px; /* Устанавливаем максимальную ширину */
+  
+  margin-bottom: 300px;
+  
+}
+.box-tarif {
+  margin-top: 15px;
+  width:80%; /*Задаем ширину в процентах чтобы сделать ее резиновой*/
+  height:380px; /* Высота блока */
+  color:#000000;
+  border-width:1;
+  border-color: rgb(190,190,190);
+  border-style: solid;
+}
+
+/*-----------------------------------------------------------------------------------------------------Блок Тарифов---------------------------------------------------------------- */
+
+/* @media трансляторы для javascript */
+@media (min-width: 995px) {
+  .tarif2 {
+    
+    margin:0 auto; /* Центрируем блоки */
+    width:90%; /* Задаем ширину 100%, чтобы сделать ее резиновой */
+    max-width:1400px; /* Устанавливаем максимальную ширину */
+    
+    margin-bottom: 300px;
+    
+  }
+  
+}
+@media (min-width: 480px) {
+  head {
+      width: 480px;
+  }
+}
+@media (min-width: 700px) {
+  head {
+      width: 995px;
+  }
 }
