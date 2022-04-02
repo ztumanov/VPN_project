@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/paymant.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        
+      
+        <meta charset="UTF-8">
+        <title>VPN_project</title>
+      
+        <div class="menu">
+          <div class="logo">
+            <h2>AXO</h2><img src="img/logo.png" alt=""><h2>VPN</h2>
+          </div>
+          
+          <div class="munu-all">
+            <ul>
+              <li class="one-menu"><a href="#">Главная</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Скачать</a></li>
+              <li class="end"><a href="#">Помощь</a></li>
+            </ul>
+          </div>
+          <div class="login">
+            <ul>
+              <div class="regist"><li><a href="#">Купить VPN</a></li></div>
+              <li><a href="#">Вход</a></li>
+            </ul>
+          </div>
+          <hr class="hr-shadow">
+        </div>
+        
+        <div class="menu_phone">
+              <a class="menu-triger" href="#"><img src="img/menu.png" alt=""></a>
+              <div class="menu-popup">
+                  <a class="menu-close" href="#"></a>
+                  <ul>
+                      <li><a href="#">Купить VPN</a></li>
+                      <li><a href="#">Скачать</a></li>		
+                      <li><a href="#">Помощь</a></li>
+              <li><a href="#">Вход</a></li>
+                  </ul>						
+              </div>
+          </div>
+      
+      </head>
+<body>
+  
+<div class="form1">
+  <div class="texxxt">
+    Вы можете указать имя для каждого подключения
+Например: “телефон” или “компьютер”
+  </div>
+  <div class="diveceColl">
+    <div class="pole">
+      <h2>Подключение 1</h2><h3>укажите имя</h3>
+    </div>
+    <select id="payments" name="payments" is="ms-dropdown" required>
+      <option value="" data-description="Choos your payment gateway">Payment Gateway</option>
+      <option value="amex" data-image="./dist/images/icons/Amex-56.png" data-description="My life. My card...">Amex</option>
+      <option value="Discover" data-image="./dist/images/icons/Discover-56.png" data-description="It pays to Discover...">Discover</option>
+      <option value="Mastercard" data-image="./dist/images/icons/Mastercard-56.png" data-title="For everything else..." data-description="For everything else...">Mastercard</option>
+      <option value="cash" data-image="./dist/images/icons/Cash-56.png" data-description="Pay at your doorstep...">Cash on devlivery</option>
+      <option value="Visa" data-image="./dist/images/icons/Visa-56.png" data-description="All you need...">Visa</option>
+      <option value="Paypal" data-image="./dist/images/icons/Paypal-56.png" data-description="Pay and get paid...">Paypal</option>
+    </select> &nbsp;
+  </div>
+  
+  <div class="pole2">
+      
+  </div>
+  <div class="diveceColl2">
+    
+  </div>
+  <div class="diveceColl3">
+    
+  </div>
+</div>
+
+
+
+  <script src="js/jQuery_v3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
